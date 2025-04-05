@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f3f4f6;
+}
+
+.calculator {
+  background: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 320px;
+}
+
+.display {
+  background-image: url(Screenshot\ 2025-01-02\ 201445.png);
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 20px;
+  text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background-image: url(golden-flowers-pattern-background_1236-179.jpg);
+}
+
+button {
+  background: #f9f9f9;
+  padding: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: goldenrod;
+}
+
+button:active {
+  background: #ccc;
+}
+
+button.equals {
+  background: goldenrod;
+  color: #fff;
+  grid-column: span 2;
+}
+
+button.equals:hover {
+  background: #218838;
+}
+
+button.zero {
+  grid-column: span 2;
+}

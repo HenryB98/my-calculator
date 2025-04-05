@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HenryB's Golden Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+/ main/
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteLast()">DEL</button>
+            <button onclick="appendOperator('/')">÷</button>
+            <button onclick="appendOperator('*')">×</button>
+            <button onclick="appendNumber('7')"><img src="7.png" width="30px"></button>
+            <button onclick="appendNumber('8')"><img src="8.png" width="30px"></button>
+            <button onclick="appendNumber('9')"><img src="9.png" width="30px"></button>
+            <button onclick="appendOperator('-')">−</button>
+            <button onclick="appendNumber('4')"><img src="4.png" width="30px"></button>
+            <button onclick="appendNumber('5')"><img src="5.png" width="30px"></button>
+            <button onclick="appendNumber('6')"><img src="6.png" width="30px"></button>
+            <button onclick="appendOperator('+')">+</button>
+            <button onclick="appendNumber('1')"><img src="1.png" width="30px"></button>
+            <button onclick="appendNumber('2')"><img src="2.png" width="30px"></button>
+            <button onclick="appendNumber('3')"><img src="3.png" width="30px"></button>
+            <button onclick="appendNumber('.')">.</button>
+            <button onclick="calculateResult()" class="equals">=</button>
+            <button onclick="appendNumber('0')" class="zero"><img src="0.png" width="30px"></button>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
